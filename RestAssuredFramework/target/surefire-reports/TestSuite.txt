@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.601 s <<< FAILURE! - in TestSuite
+ShouldBeAbleToUpdateAPlaylist(com.spotify.ouath2.tests.PlaylistsTests)  Time elapsed: 5.877 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected content-type "JSON" doesn't match actual content-type "".
+
+	at com.spotify.ouath2.tests.PlaylistsTests.ShouldBeAbleToUpdateAPlaylist(PlaylistsTests.java:66)
+
+ShouldBeAbleToCreateAPlaylist(com.spotify.ouath2.tests.PlaylistsTests)  Time elapsed: 5.911 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "Description O93-O_6l_17_ Nu,mzbR_ _ ,-dO-ta1F,q-X,, __6U-,_1-6"
+     but: was null
+	at com.spotify.ouath2.tests.PlaylistsTests.assertPlaylistEqual(PlaylistsTests.java:102)
+	at com.spotify.ouath2.tests.PlaylistsTests.ShouldBeAbleToCreateAPlaylist(PlaylistsTests.java:45)
+
